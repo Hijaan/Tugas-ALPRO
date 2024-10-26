@@ -1,0 +1,10 @@
+CREATE TABLE products (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT,
+    barcode TEXT UNIQUE,
+    price REAL
+);
+
+-- Contoh data
+INSERT INTO products (name, barcode, price) VALUES ('Product 1', '123456', 15000);
+INSERT INTO products (name, barcode, price) VALUES ('Product 2', '789101', 25000);
